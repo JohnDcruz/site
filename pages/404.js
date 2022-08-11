@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center'>
         <h1>
-          We couldn't find that page!
+          We couldn&apos;t find that page!
         </h1>
       </main>
     </div>
