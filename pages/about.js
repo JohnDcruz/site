@@ -1,9 +1,10 @@
-import Header from "../components/header"
+import Navbar from "../components/navbar"
+import { fetchData } from "../config/fetchData";
 
-export default function About() {
+function About({ data }) {
   return (
     <div>
-      <Header title={'About'} />
+      <Navbar title={'About'} />
 
       <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center'>
         <h1>
@@ -13,3 +14,17 @@ export default function About() {
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const res = await fetchData()
+  const data = await res.map((p) => {
+    return p.fields
+  })
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default About;

@@ -11,7 +11,6 @@ export default function Header({ title }) {
     <Head>
       <title>{titleText}</title>
       <link rel="icon" href="/favicon.ico" />
-      <script src="https://kit.fontawesome.com/79a00b644c.js" crossorigin="anonymous"></script>
     </Head>
   )
 }
