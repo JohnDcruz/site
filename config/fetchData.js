@@ -6,10 +6,21 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
-export async function fetchData() {
-  const entries = await client.getEntries()
+export async function fetchData({ type }) {
+  const entries = await client.getEntries({
+    content_type: type,
+  });
   if (entries.items) return entries.items
-  console.log(`Error getting Entries for ${contentType.name}.`)
+  console.log(`Error getting data from Contentful.`);
+}
+
+export async function fetchWork({ type, category }) {
+  const entries = await client.getEntries({
+    content_type: type,
+    'fields.category[match]': category
+  });
+  if (entries.items) return entries.items
+  console.log(`Error getting data from Contentful.`);
 }
 
 export default { fetchData }

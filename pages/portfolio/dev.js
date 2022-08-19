@@ -1,17 +1,25 @@
-import Navbar from "../../components/navbar"
+import { fetchWork } from "../../config/fetchData";
+import PortfolioPage from "../../components/portfolio/page";
 
-function Dev() {
+function Dev({ work }) {
   return (
     <div>
-      <Navbar title={'Media Portfolio'} />
-
-      <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center'>
-        <h1>
-          Dev
-        </h1>
-      </main>
+      <PortfolioPage category={'Development'} work={work} />
     </div>
   )
+}
+
+export async function getStaticProps() { 
+  const workRes = await fetchWork({ type: 'work', category: 'Development' });
+  const work = await workRes.map((p) => {
+    return p.fields
+  });
+  return {
+    props: {
+      work,
+    },
+  };
+
 }
 
 export default Dev;
