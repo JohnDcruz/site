@@ -2,8 +2,8 @@ import Navbar from "../components/navbar"
 import { fetchData } from "../config/fetchData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import getFormattedDate from "../components/about/dateHelper";
-import getListWithCommas from "../components/about/listHelper";
+import getFormattedDate from "../components/helpers/dateHelper";
+import getListWithCommas from "../components/helpers/listHelper";
 
 function About({ about, work, education, lists }) {
 
@@ -72,19 +72,19 @@ function About({ about, work, education, lists }) {
 }
 
 export async function getStaticProps() { 
-  const aboutRes = await fetchData({ type: 'about' });
+  const aboutRes = await fetchData({ type: 'about', sort: '' });
   const about = await aboutRes.map((p) => {
     return p.fields
   })[0];
-  const workRes = await fetchData({ type: 'work' });
+  const workRes = await fetchData({ type: 'work', sort: '-fields.start' });
   const work = await workRes.map((p) => {
     return p.fields
   });
-  const educationRes = await fetchData({ type: 'school' });
+  const educationRes = await fetchData({ type: 'school', sort: '' });
   const education = await educationRes.map((p) => {
     return p.fields
   });
-  const listRes = await fetchData({ type: 'certifications' });
+  const listRes = await fetchData({ type: 'certifications', sort: '' });
   const lists = await listRes.map((p) => {
     return p.fields;
   });

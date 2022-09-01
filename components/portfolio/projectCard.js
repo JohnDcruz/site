@@ -1,18 +1,24 @@
+import getFormattedDate from "../helpers/dateHelper";
+import { useState } from 'react'
+import ProjectDetail from "./projectDetail";
+
 export default function ProjectCard({ project }) {
+
+  let [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="p-12 text-center relative overflow-hidden bg-no-repeat bg-cover rounded-lg"
-    style={{
-      backgroundImage: `url(${project.thumbnail ? 'https:' + project.thumbnail.fields.file.url : ''})`,
-      height: `400px`,
-    }}>
-    <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
-      <div className="flex justify-center items-center h-full">
-        <div className="text-white">
-          <p>{project.role} at {project.company} from {project.start} to {project.end ? project.end : 'present'} in {project.location}</p>
+    <>
+      <div className="container mx-auto my-4 overflow-hidden bg-no-repeat bg-cover text-center rounded-lg text-white w-4/5" style={{
+      backgroundImage: `url(${'https:' + project.thumbnail.fields.file.url})`,
+      height: '500px',
+      }} onClick={() => setIsOpen(true)}>
+        <div className="space-y-2 bg-black bg-opacity-60 w-full h-full px-12 py-48 flex flex-col items-center justify-center">
+          <p className="text-3xl bg-opacity-100">{project.role} at {project.company}</p>
+          <p>{getFormattedDate(project.start)} - {project.end ? getFormattedDate(project.end) : 'present'} | {project.location}</p>
         </div>
       </div>
-    </div>
-  </div>
-  
+
+      <ProjectDetail isOpen={isOpen} setIsOpen={setIsOpen} project={project}/>
+    </>
   )
 }

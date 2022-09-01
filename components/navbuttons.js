@@ -10,7 +10,6 @@ export default function NavButtons({ showText, title }) {
           <FontAwesomeIcon icon={faInfo} />{showText ? '\u2002About' : ''}
         </button>
       </Link>
-      {/* LEAVE OUT FOR GIT PUSH
       <Link href='/portfolio/media'>
         <button id='mediaButton' className='text-xl mt-4 py-2 px-4 mx-4 rounded-full border-0 font-semibold bg-slate-100 text-slate-800 hover:bg-slate-300'>
           <FontAwesomeIcon icon={faFilm} />{showText ? '\u2002Media Portfolio' : ''}
@@ -20,7 +19,7 @@ export default function NavButtons({ showText, title }) {
         <button id='devButton' className='text-xl mt-4 py-2 px-4 mx-4 rounded-full border-0 font-semibold bg-slate-100 text-slate-800 hover:bg-slate-300'>
           <FontAwesomeIcon icon={faCode} />{showText ? '\u2002Development Portfolio' : ''}
         </button>
-      </Link> */}
+      </Link>
     </span>
   )
 }

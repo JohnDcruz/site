@@ -6,9 +6,10 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
-export async function fetchData({ type }) {
+export async function fetchData({ type, sort }) {
   const entries = await client.getEntries({
     content_type: type,
+    order: sort
   });
   if (entries.items) return entries.items
   console.log(`Error getting data from Contentful.`);
@@ -17,10 +18,9 @@ export async function fetchData({ type }) {
 export async function fetchWork({ type, category }) {
   const entries = await client.getEntries({
     content_type: type,
-    'fields.category[match]': category
+    'fields.category[match]': category,
+    order: '-fields.start'
   });
   if (entries.items) return entries.items
   console.log(`Error getting data from Contentful.`);
 }
-
-export default { fetchData }

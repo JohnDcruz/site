@@ -3,9 +3,7 @@ import PortfolioPage from "../../components/portfolio/page";
 
 function Media({ work }) {
   return (
-    <div>
-      <PortfolioPage category={'Media'} work={work} />
-    </div>
+    <PortfolioPage category={'Media'} work={work} />
   )
 }
 
