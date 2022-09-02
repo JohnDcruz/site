@@ -31,7 +31,7 @@ export default function ProjectDetailContent({ setIsOpen, project }) {
           naturalSlideHeight={100}
           isIntrinsicHeight={true}
           infinite={true}
-          totalSlides={1 + (project.media ? project.media.length : 0) + (project.youTubeVideos ? project.youTubeVideos.length : 0)}
+          totalSlides={(project.media ? project.media.length : 0) + (project.youTubeVideos ? project.youTubeVideos.length : 0)}
         >
           <HR />
           <Slider>
