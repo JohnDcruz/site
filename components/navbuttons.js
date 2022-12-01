@@ -21,7 +21,7 @@ export default function NavButtons({ showText, title }) {
           <FontAwesomeIcon icon={faCode} />{showText ? '\u2002Development Portfolio' : ''}
         </button>
       </Link>
-      {showText ? 
+      {!showText ? 
       <Link href='https://www.linkedin.com/in/john-d-cruz-1225011b0/'>
         <button id='linkedinBUtton' className='text-xl mt-4 py-2 px-4 mx-4 rounded-full border-0 font-semibold bg-slate-100 text-slate-800 hover:bg-slate-300'>
           <FontAwesomeIcon icon={faLinkedin} />{showText ? '\u2002Linkedin' : ''}
