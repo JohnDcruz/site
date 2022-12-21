@@ -26,10 +26,10 @@ function About({ about, work, education, lists }) {
                 {about.about}
               </p>
               <p className='text-xl mt-4'><span>Right now, John is </span>
-              <span className='text-red-400'>working {about.working}, </span>
-              <span className='text-yellow-400'>watching {about.watching}, </span>
-              <span className='text-blue-400'>listening {about.listening}, and </span>
-              <span className='text-green-400'>cooking {about.cooking}.</span></p>
+              <span className='text-red-400'>{about.red}, </span>
+              <span className='text-blue-400'>{about.blue}, </span>
+              <span className='text-green-400'>{about.green}, </span>
+              <span className='text-yellow-400'>and {about.yellow}.</span></p>
             </div>
           </div>
           <div className='mt-5

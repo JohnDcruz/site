@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <>
-      <div className="container mx-auto my-4 overflow-hidden bg-no-repeat bg-cover text-center rounded-lg text-white w-4/5" style={{
+      <div className="container mx-auto my-4 overflow-hidden bg-no-repeat bg-cover text-center rounded-lg text-white" style={{
       backgroundImage: `url(${'https:' + project.thumbnail.fields.file.url})`,
       height: '500px',
       }} onClick={() => setIsOpen(true)}>

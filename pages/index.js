@@ -11,13 +11,15 @@ export default function Home() {
       <Header title={'Home'}/>
 
       <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center'>
-        <a href='about' className='font-serif tracking-wide text-7xl mb-5 text-center'>
-          john d&apos;cruz
-        </a>
+        <p className='font-serif tracking-wide text-7xl mb-6 text-center hover:text-red-400'>
+          <Link href='about'>
+            john d&apos;cruz
+          </Link>
+        </p>
         <p className='text-2xl font-serif tracking-wide mb-5'>
-          <span className='hover:text-slate-400'><Link href='/portfolio/media'>filmmaker.</Link>&nbsp;</span>
-          <span className='hover:text-slate-400'><Link href='/portfolio/dev'>developer.</Link>&nbsp;</span>
-          <span className='hover:text-slate-400'><Link href='/about'>student.</Link></span>
+          <span className='hover:text-blue-400'><Link href='/comingsoon'>filmmaker.</Link>&nbsp;</span>
+          <span className='hover:text-green-400'><Link href='/comingsoon'>developer.</Link>&nbsp;</span>
+          <span className='hover:text-yellow-400'><Link href='/about'>student.</Link></span>
         </p>
         <div className="flex gap-2 mb-5">
           <Tooltip content='New York Metropolitan Area' placement="bottom">
