@@ -1,5 +1,5 @@
 import Header from "../components/header"
-import NavButtons from "./navbuttons"
+import LinkIcons from "./linkIcons"
 
 export default function Navbar({ title }) {
   return (
@@ -10,7 +10,7 @@ export default function Navbar({ title }) {
       <nav className="flex justify-between flex-wrap p-1 pb-4 lg:px-0 container mx-auto">
         <div className="flex-grow flex items-center w-auto text-center justify-center">
           <ul className="items-center">
-            <NavButtons showText={true} title={title} />
+            <LinkIcons />
           </ul>
         </div>
       </nav>
