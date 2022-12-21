@@ -4,13 +4,14 @@ import getListWithCommas from "../components/helpers/listHelper";
 import Image from 'next/image'
 import Header from "../components/header"
 import BackButton from "../components/backButton";
+import { Accordion } from "flowbite-react";
 
 function About({ about, work, education, lists }) {
 
   return (
-    <div>
+    <div className='bg-slate-800 min-h-screen'>
       <Header title={"About"} />
-      <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center'>
+      <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center h-full'>
         <div className="w-4/5">
           <BackButton />
           <div className='flex'>
@@ -24,53 +25,69 @@ function About({ about, work, education, lists }) {
               <p className='text-lg'>
                 {about.about}
               </p>
+              <p className='text-xl mt-4'><span>Right now, John is </span>
+              <span className='text-red-400'>working {about.working}, </span>
+              <span className='text-yellow-400'>watching {about.watching}, </span>
+              <span className='text-blue-400'>listening {about.listening}, and </span>
+              <span className='text-green-400'>cooking {about.cooking}.</span></p>
             </div>
           </div>
-          <div className='space-y-2 my-4 text-left'>
-            <h2 className='text-3xl'>
-              Experience
-            </h2>
-            {work.map((job) => (
-              <div key={job.company}>
-                <p className='font-bold'>{job.role} at {job.company}</p>
-                <p className='font-light'>{getFormattedDate(job.start)} - {job.end ? getFormattedDate(job.end) : 'present'} | {job.location}</p>
-                <p>{job.details}</p>
-              </div>
+          <div className='mt-5
+          '>
+            <Accordion alwaysOpen={true} flush={true} title="Skills">
+              <Accordion.Panel>
+                  <Accordion.Title className="text-2xl text-white">
+                    Experience
+                  </Accordion.Title>
+                  <Accordion.Content className='space-y-2'>
+                    {work.map((job) => (
+                      <div key={job.company}>
+                        <p className='font-bold'>{job.role} at {job.company}</p>
+                        <p className='font-light'>{getFormattedDate(job.start)} - {job.end ? getFormattedDate(job.end) : 'present'} | {job.location}</p>
+                        <p>{job.details}</p>
+                      </div>
+                    ))}
+                  </Accordion.Content>
+              </Accordion.Panel>
+              <Accordion.Panel>
+                  <Accordion.Title className="text-2xl text-white">
+                    Education
+                  </Accordion.Title>
+                  <Accordion.Content className='space-y-2'>
+                    {education.map((school) => (
+                      <div key={school.name}>
+                        <p className='font-bold text-2xl'>{school.name}</p>
+                        <p>{school.degree ? school.degree + ' | ' : ''}{getFormattedDate(school.start)} - {getFormattedDate(school.end)}</p>
+                        <p className='font-bold mt-2'>{school.courses ? 'Relevant Coursework' : ''}</p>
+                        {school.courses ? school.courses.map((course) => (
+                          <div key={course.fields.title}>
+                            <span>{course.fields.title}</span>
+                          </div>
+                        )) : ''}
+                        <p className='font-bold mt-2'>Extracurriculars</p>
+                        {school.extracurriculars ? school.extracurriculars.map((activity) => (
+                          <div key={activity.fields.group}>
+                            <span>{activity.fields.group} as {getListWithCommas(activity.fields.roles)}</span>
+                          </div>
+                        )): ''}
+                      </div>
+                    ))}
+                  </Accordion.Content>
+              </Accordion.Panel>
+            {lists.map((list) => (
+              <Accordion.Panel key={list.title} >
+                  <Accordion.Title className="text-2xl text-white">
+                    {list.title}
+                  </Accordion.Title>
+                  <Accordion.Content className='space-y-2'>
+                    <p>
+                      {getListWithCommas(list.name)}
+                    </p>
+                  </Accordion.Content>
+              </Accordion.Panel>
             ))}
+            </Accordion>
           </div>
-          <div className='space-y-2 my-4 text-left'>
-            <h2 className='text-3xl'>
-              Education
-            </h2>
-            {education.map((school) => (
-              <div key={school.name}>
-                <p className='font-bold text-xl'>{school.name}</p>
-                <p>{school.degree ? school.degree + ' | ' : ''}{getFormattedDate(school.start)} - {getFormattedDate(school.end)}</p>
-                <p className='font-bold mt-2'>{school.courses ? 'Relevant Coursework' : ''}</p>
-                {school.courses ? school.courses.map((course) => (
-                  <div key={course.fields.title}>
-                    <span>{course.fields.title}</span>
-                  </div>
-                )) : ''}
-                <p className='font-bold mt-2'>Extracurriculars</p>
-                {school.extracurriculars ? school.extracurriculars.map((activity) => (
-                  <div key={activity.fields.group}>
-                    <span>{activity.fields.group} as {getListWithCommas(activity.fields.roles)}</span>
-                  </div>
-                )): ''}
-              </div>
-            ))}
-          </div>
-          {lists.map((list) => (
-            <div key={list.title} className='space-y-2 my-4 text-left'>
-              <h2 className='text-3xl'>
-                {list.title}
-              </h2>
-              <p>
-                {getListWithCommas(list.name)}
-              </p>
-            </div>
-          ))}
         </div>
       </main>
     </div>
