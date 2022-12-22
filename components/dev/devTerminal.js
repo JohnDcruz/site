@@ -50,11 +50,8 @@ class DevTerminal extends Component {
         welcomeMessage={"Welcome to the terminal! Enter help to learn more"}
         promptLabel={"visitor:~$"}
         promptLabelStyle={{ color: '#f87171' }}
-        inputStyle={{ outline: 'none', border: 'none', borderStyle: 'none'}}
-        inputTextStyle={{ color: '#ffffff' }}
+        inputTextStyle={{ color: '#ffffff', outline: 'none', boxShadow: 'none', height: 'auto' }}
         style={{ minHeight: '80vh', marginBottom: '2rem' }}
-        //TODO remove blue box around terminal input
-        //TODO fix double welcome message
         //TODO make terminal autoscroll to bottom
       />
     )
