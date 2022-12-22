@@ -33,6 +33,7 @@ class DevTerminal extends Component {
               this.setCurrentProject(project);
               return 'Opening ' + project.project + '...';
             }
+            //TODO fix opening project by name
           });
           return (returned ? result : 'Project not found.');
         } else {
