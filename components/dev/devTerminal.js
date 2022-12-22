@@ -53,9 +53,9 @@ class DevTerminal extends Component {
         inputStyle={{ outline: 'none', border: 'none', borderStyle: 'none'}}
         inputTextStyle={{ color: '#ffffff' }}
         style={{ minHeight: '80vh', marginBottom: '2rem' }}
-        //TODO: remove blue box around terminal input
-        //TODO: fix double welcome message
-        //TODO: make terminal autoscroll to bottom
+        //TODO remove blue box around terminal input
+        //TODO fix double welcome message
+        //TODO make terminal autoscroll to bottom
       />
     )
   }

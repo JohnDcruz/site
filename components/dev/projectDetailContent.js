@@ -4,8 +4,6 @@ import Image from 'next/image'
 import RichTextResponse from "../helpers/richTextHelpers/response";
 
 export default function ProjectDetailContent({ setIsOpen, project }) {
-  let slideIndex = 0;
-  let slideTitles = [];
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="text-right place-self-end">
