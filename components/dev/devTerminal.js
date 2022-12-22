@@ -22,12 +22,12 @@ class DevTerminal extends Component {
     },
     open: {
       description: 'Open a project.',
-      usage: 'open <projectNumber>',
+      usage: 'open <projectNumber/projectName>',
       fn: (...args) => {
         let returned = false;
         if (args) {
           let result = (this.projects).map((project) => {
-            if (project.id == args) {
+            if (project.id == args || project.project == args) {
               returned = true;
               this.setIsOpen(true);
               this.setCurrentProject(project);
