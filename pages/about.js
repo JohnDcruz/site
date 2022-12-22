@@ -18,6 +18,7 @@ function About({ about, work, education, lists }) {
             <div className='w-3/12'>
               <Image src="/profile.JPG" alt="Profile" width={300} height={300} />
             </div>
+            {/* TODO: fix profile picture rendering */}
             <div className='w-9/12 ml-10 space-y-3 flex flex-col items-center text-center justify-center'>
               <h1 className='text-6xl'>
                 {about.author}

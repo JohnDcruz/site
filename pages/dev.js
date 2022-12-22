@@ -1,32 +1,23 @@
 import { fetchWork } from "../config/fetchData";
 import BackButton from "../components/backButton";
-import ProjectCard from "../components/portfolio/projectCard";
 import Header from "../components/header";
-import Terminal from 'react-console-emulator'
+import { useState } from 'react'
+import ProjectDetail from "../components/dev/projectDetail";
+import DevTerminal from "../components/dev/devTerminal";
+  
+function Dev({ projects }) {
+  let [isOpen, setIsOpen] = useState(false);
+  let [currentProject, setCurrentProject] = useState();
+  const Terminal = DevTerminal;
 
-const commands = {
-  echo: {
-    description: 'Echo a passed string.',
-    usage: 'echo <string>',
-    fn: (...args) => args.join(' ')
-  }
-}
-
-function Dev({ work }) {
   return (
     <div className='bg-slate-800 min-h-screen'>
       <Header title={"Dev Work"} />
       <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center h-full'>
-        <div className="w-4/5">
+        <div className="w-4/5 flex-none">
           <BackButton />
-          <Terminal
-            commands={commands}
-            welcomeMessage={"Welcome to my dev work!"}
-            promptLabel={"visitor:~$"}
-          />
-          {work.map((job) => (
-            <ProjectCard key={job.company} project={job} />
-          ))}
+          <ProjectDetail isOpen={isOpen} setIsOpen={setIsOpen} project={currentProject} />
+          <Terminal projects={projects} setIsOpen={setIsOpen} setCurrentProject={setCurrentProject} />
         </div>
       </main>
     </div>
@@ -34,16 +25,13 @@ function Dev({ work }) {
 }
 
 export async function getStaticProps() { 
-  const workRes = await fetchWork({ type: 'work', category: 'Development' });
-  const work = await workRes.map((p) => {
+  const projectRes = await fetchWork({ type: 'devWork' });
+  const projects = await projectRes.map((p) => {
     return p.fields
-  });
-  const id = await workRes.map((p) => {
-    return p.sys.id
   });
   return {
     props: {
-      work,
+      projects,
     },
   };
 

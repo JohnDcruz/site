@@ -29,7 +29,7 @@ export default function ProjectDetail({ isOpen, setIsOpen, project }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-3/5 transform overflow-hidden rounded-2xl bg-white p-6 align-middle shadow-xl transition-all flex flex-col items-center justify-center">
+              <Dialog.Panel className="w-3/5 transform rounded-2xl bg-slate-200 p-6 align-middle shadow-xl transition-all " style={{minHeight: '80vh'}}>
                 <ProjectDetailContent setIsOpen={setIsOpen} project={project} />
               </Dialog.Panel>
             </Transition.Child>

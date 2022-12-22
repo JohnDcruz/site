@@ -19,7 +19,7 @@ export async function fetchWork({ type, category }) {
   const entries = await client.getEntries({
     content_type: type,
     'fields.category[match]': category,
-    order: '-fields.start'
+    order: 'fields.id'
   });
   if (entries.items) return entries.items
   console.log(`Error getting data from Contentful.`);
