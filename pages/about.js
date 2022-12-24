@@ -41,7 +41,6 @@ function About({ about, work, education, lists }) {
                     Experience
                   </Accordion.Title>
                   <Accordion.Content className='space-y-2'>
-                    {/*TODO categorize work experience by type */}
                     {work.map((job) => (
                       <div key={job.company}>
                         <p className='font-bold'>{job.role} at {job.company}</p>

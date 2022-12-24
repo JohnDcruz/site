@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import { Tooltip } from "flowbite-react";
+import { Tooltip, Alert } from "flowbite-react";
 
 export default function Home() {
   return (
@@ -49,6 +49,7 @@ export default function Home() {
             </Link>
           </Tooltip>
         </div>
+        {/* TODO add Tip! Click around to learn more */}
       </main>
     </div>
   )

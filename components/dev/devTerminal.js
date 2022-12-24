@@ -27,13 +27,12 @@ class DevTerminal extends Component {
         let returned = false;
         if (args) {
           let result = (this.projects).map((project) => {
-            if (project.id == args || project.project == args) {
+            if (project.id == args || project.project == args.join(' ')) {
               returned = true;
               this.setIsOpen(true);
               this.setCurrentProject(project);
               return 'Opening ' + project.project + '...';
             }
-            //TODO fix opening project by name
           });
           return (returned ? result : 'Project not found.');
         } else {
