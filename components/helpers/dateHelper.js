@@ -2,6 +2,6 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 export default function getFormattedDate(date) {
   const rawDate = new Date(date);
-  const month = months[rawDate.getMonth()];
+  const month = months[rawDate.getMonth() + 1];
   return month + ' ' + rawDate.getFullYear();
 }
