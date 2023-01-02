@@ -40,6 +40,13 @@ class DevTerminal extends Component {
         }
       }
     },
+    exit: {
+      description: 'Exit the terminal.',
+      usage: 'exit',
+      fn: () => {
+        window.location.href = "/dev";
+      }
+    },
   }  
 
   render() {
@@ -47,7 +54,7 @@ class DevTerminal extends Component {
       <Terminal
         ref={this.terminal}
         commands={this.commands}
-        welcomeMessage={"Welcome to the terminal! Enter help to learn more"}
+        welcomeMessage={"Welcome! Enter help to learn more or exit to return to the list."}
         promptLabel={"visitor:~$"}
         promptLabelStyle={{ color: '#f87171' }}
         inputTextStyle={{ color: '#ffffff', outline: 'none', boxShadow: 'none', height: 'auto' }}
