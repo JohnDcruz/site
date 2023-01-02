@@ -1,16 +1,16 @@
 import Header from "../components/header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faEnvelope, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import { Tooltip, Alert } from "flowbite-react";
+import { Tooltip } from "flowbite-react";
 
 export default function Home() {
   return (
     <div>
       <Header title={'Home'}/>
 
-      <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center'>
+      <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center relative'>
         <p className='font-serif tracking-wide text-7xl mb-6 text-center hover:text-red-400'>
           <Link href='about'>
             john d&apos;cruz
@@ -49,7 +49,13 @@ export default function Home() {
             </Link>
           </Tooltip>
         </div>
-        {/* TODO add Tip! Click around to learn more */}
+        <div className='absolute bottom-0 left-0 m-5'>
+          <Tooltip content='Click on anything to learn more!' placement="right" className='w-max'>
+            <button id='infoButton' className='text-xl font-semibold text-slate-100'>
+              <FontAwesomeIcon icon={faCircleExclamation} />
+            </button>
+          </Tooltip>
+        </div>
       </main>
     </div>
   )
