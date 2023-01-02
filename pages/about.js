@@ -7,7 +7,6 @@ import BackButton from "../components/backButton";
 import { Accordion } from "flowbite-react";
 
 function About({ about, work, education, lists }) {
-
   return (
     <div className='bg-slate-800 min-h-screen'>
       <Header title={"About"} />
@@ -15,10 +14,9 @@ function About({ about, work, education, lists }) {
         <div className="w-4/5">
           <BackButton />
           <div className='flex'>
-            <div className='w-3/12'>
-              <Image src="/profile.JPG" alt="Profile" width={300} height={300} />
+            <div className='w-3/12 relative'>
+              <Image src={'https:' + about.profile.fields.file.url} alt="Profile" layout="fill" objectFit="cover" />
             </div>
-            {/* TODO fix profile picture rendering */}
             <div className='w-9/12 ml-10 space-y-3 flex flex-col items-center text-center justify-center'>
               <h1 className='text-6xl'>
                 {about.author}

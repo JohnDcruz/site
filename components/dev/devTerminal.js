@@ -52,7 +52,6 @@ class DevTerminal extends Component {
         promptLabelStyle={{ color: '#f87171' }}
         inputTextStyle={{ color: '#ffffff', outline: 'none', boxShadow: 'none', height: 'auto' }}
         style={{ minHeight: '80vh', marginBottom: '2rem' }}
-        //TODO make terminal autoscroll to bottom
       />
     )
   }
