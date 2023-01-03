@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
 import RichTextResponse from "../helpers/richTextHelpers/response";
+import BuiltWithBar from "./builtwithbar";
 
 export default function ProjectDetailContent({ setIsOpen, project }) {
   return (
@@ -21,9 +22,10 @@ export default function ProjectDetailContent({ setIsOpen, project }) {
         </div>
         <div className='bg-blue'>
           <p className="text-3xl text-center my-2">{project.role} at {project.project}</p>
+          <hr className='my-4 h-px bg-slate-800 border-0 '/>
+          <BuiltWithBar data={project.builtWith[0]} />
           {project.content ? (
             <>
-              <hr className='my-4 h-px bg-slate-800 border-0 '/>
               <RichTextResponse content={project.content} />
             </>
           ) : ''}
