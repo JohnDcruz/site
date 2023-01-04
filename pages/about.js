@@ -14,7 +14,7 @@ function About({ about, work, education, lists }) {
         <div className="w-4/5">
           <BackButton />
           <div className='flex'>
-            <div className='w-3/12 relative'>
+            <div className='w-3/12 relative' style={{minHeight: '400px', minWidth: '400px'}}>
               <Image src={'https:' + about.profile.fields.file.url} alt="Profile" layout="fill" objectFit="cover" />
             </div>
             <div className='w-9/12 ml-10 space-y-3 flex flex-col items-center text-center justify-center'>
