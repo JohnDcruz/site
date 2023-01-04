@@ -38,7 +38,7 @@ function About({ about, work, education, lists }) {
                   <Accordion.Title className="text-2xl text-white">
                     Experience
                   </Accordion.Title>
-                  <Accordion.Content className='space-y-2'>
+                  <Accordion.Content className='space-y-4'>
                     {work.map((job) => (
                       <div key={job.company}>
                         <p className='font-bold'>{job.role} at {job.company}</p>
