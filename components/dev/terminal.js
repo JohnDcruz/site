@@ -26,8 +26,9 @@ class DevTerminal extends Component {
       fn: (...args) => {
         let returned = false;
         if (args) {
+          console.log(args);
           let result = (this.projects).map((project) => {
-            if (project.id == args || project.project == args.join(' ')) {
+            if (String(project.id) === args[0] || String(project.project).toLocaleLowerCase() === String(args.join(' ')).toLocaleLowerCase()) {
               returned = true;
               this.setIsOpen(true);
               this.setCurrentProject(project);
@@ -54,11 +55,10 @@ class DevTerminal extends Component {
       <Terminal
         ref={this.terminal}
         commands={this.commands}
-        welcomeMessage={"Welcome! Enter help to learn more or exit to return to the list."}
         promptLabel={"visitor:~$"}
         promptLabelStyle={{ color: '#f87171' }}
         inputTextStyle={{ color: '#ffffff', outline: 'none', boxShadow: 'none', height: 'auto' }}
-        style={{ minHeight: '80vh', marginBottom: '2rem' }}
+        style={{ minHeight: '100vh', borderRadius: '0px' }}
       />
     )
   }

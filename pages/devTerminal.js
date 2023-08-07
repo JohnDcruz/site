@@ -4,22 +4,20 @@ import Header from "../components/header";
 import { useState } from 'react'
 import ProjectDetail from "../components/dev/projectDetail";
 import DevTerminal from "../components/dev/terminal";
-  
+import TerminalPopup from "../components/dev/terminalPopup";
+
 function Dev({ projects }) {
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpenProject, setIsOpenProject] = useState(false);
+  let [isOpenPopup, setIsOpenPopup] = useState(true);
   let [currentProject, setCurrentProject] = useState();
   const Terminal = DevTerminal;
 
   return (
-    <div className='bg-slate-800 min-h-screen'>
+    <div className='min-h-screen min-w-screen'>
       <Header title={"Dev Work"} />
-      <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center h-full'>
-        <div className="w-4/5">
-          <BackButton />
-          <ProjectDetail isOpen={isOpen} setIsOpen={setIsOpen} project={currentProject} />
-          <Terminal projects={projects} setIsOpen={setIsOpen} setCurrentProject={setCurrentProject} />
-        </div>
-      </main>
+      <ProjectDetail isOpen={isOpenProject} setIsOpen={setIsOpenProject} project={currentProject} />
+      <Terminal projects={projects} setIsOpen={setIsOpenProject} setCurrentProject={setCurrentProject} />
+      <TerminalPopup isOpen={isOpenPopup} setIsOpen={setIsOpenPopup} />
     </div>
   )
 }
