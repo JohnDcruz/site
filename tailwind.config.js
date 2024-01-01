@@ -6,7 +6,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'film-grain': "url('/film_images/bg.jpeg')",
+      }
+    },
   },
   plugins: [
     require("flowbite/plugin")

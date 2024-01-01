@@ -1,0 +1,260 @@
+{
+  "about": {
+    "description":"is a senior studying Film & Media Studies and Computer Science at the Johns Hopkins University. He has diverse experience in film production, including roles as a producer, assistant director, and gaffer. In his capacity as producer, he has managed various publicity and social media teams and overseen partnerships with major fashion and beauty brands. By the time he graduates college, he will have worked on over 20 projects ranging from student films to professional productions.",
+    "red": "finishing his last semester at Johns Hopkins",
+    "blue": "watching The Curse",
+    "green": "waiting for the Last Dinner Party's debut album",
+    "yellow": "working on his capstone film"
+  },
+  "work": [
+    {
+      "role": "Student Staff",
+      "company": "JHU Digital Media Center",
+      "start": "Aug 2023",
+      "end": "present",
+      "location": "Baltimore, MD",
+      "details": "Assist patrons with work in a variety of mediums, including filmmaking, photography, audio recording and mixing, live events, 3D printing, hardware development, and design. Train patrons on equipment and in-house resources, including Aputure lights, Canon DSLR/mirrorless cameras, Zoom recorders, Canon/Epson/HP inkjet printers, and Prusa 3D printers. Design proprietary frontend site for patron booking system as a replacement for LibCal.",
+      "tags": ["film", "cs"]
+    },
+    {
+      "role": "Assistant",
+      "company": "Saul Zaentz Innovation Fund",
+      "start": "Aug 2023",
+      "end": "present",
+      "location": "Baltimore, MD",
+      "details": "Process applications for the Fall 2023 fellow and Spring 2024 funding cycles. Manage official Instagram. Design flyers, advertisements, and graphics to promote applications and fellows' projects. Assist in coordinating four workshops (40-50 attendees each) supporting fellows in the production process.",
+      "tags": ["film"]
+    },
+    {
+      "role": "Course Assistant",
+      "company": "JHU Computer Science Department",
+      "start": "Sep 2022",
+      "end": "present",
+      "location": "Baltimore, MD",
+      "details": "Gateway Python (Head CA): Built autograder for 4 Gradescope assignments in Python. Assisted instructors in developing a new slate of projects fostering practical applications of course content. Managed project assistance and grading assignments for 20 course assistants. Provided support to instructors for quizzes, grading, and overall student learning. User Interfaces & Mobile Applications: guided three teams through the Android development process to craft polished gaming and productivity products.",
+      "tags": ["cs"]
+    },
+    {
+      "role": "Peter Roth Intern",
+      "company": "The Paley Center for Media",
+      "start": "Jun 2023",
+      "end": "Jul 2023",
+      "location": "New York, NY",
+      "details": "Adapted archive content into a podcast examining entertainment industry figures' resilience in the face of adversity. Connected with leading figures within the television industry including Peter Roth, Betsy Beers, and Quinta Brunson. Pitched an original 10-episode series to Paley Center employees.",
+      "tags": ["film"]
+    },
+    {
+      "role": "Development Intern",
+      "company": "Vertigo Entertainment",
+      "start": "Jan 2023",
+      "end": "May 2023",
+      "location": "Remote",
+      "details": "Wrote coverage across a variety of genres and formats, including screenplays, novels, comics, Reddit stories, and podcasts. Collaborated with intern cohort to compile daily emails summarizing industry news.",
+      "tags": ["film"]
+    },
+    {
+      "role": "Development Intern",
+      "company": "Janet Yang Productions",
+      "start": "May 2022",
+      "end": "May 2023",
+      "location": "Remote",
+      "details": "Wrote script coverage for submissions across a variety of genres. Assisted with films in development, including script feedback, director applications, casting lists, designing decks, and securing funding. Met biweekly to present coverage, trade rundowns, and other ideas to Janet Yang (President of the Academy)",
+      "tags": ["film"]
+    },
+    {
+      "role":"Multimedia Assistant",
+      "company":"Johns Hopkins University Instructional Resource Center",
+      "start":"Oct 2020",
+      "end":"May 2022",
+      "location":"Baltimore, MD",
+      "details":"Created multimedia content for 30+ graduate-level courses, including animations, documentary lectures, cinematic lectures, graphics, and course trailers, using Adobe Creative Cloud. Pitched and designed Multimedia Minute animated shorts to boost content quality and save time spent on correctional editing.",
+      "tags":["film"]
+    },
+    {
+      "role":"Teaching Assistant",
+      "company": "Baltimore Youth Film Arts",
+      "start": "Sep 2020",
+      "end": "Dec 2020",
+      "location": "Baltimore, MD",
+      "details": "Under instructor Kyle Yearwood, assisted with the development of 6 student art projects using digital mediums available during the COVID-19 pandemic.",
+      "tags": ["film"]
+    }
+  ],
+  "accolades": "JHU Hodson Scholar, National Merit Commended Student, JHU Center for Talented Youth, AFA CyberPatriot Semifinalist",
+  "skills": "CompTIA A+ Certified, Adobe Creative Cloud, NextJS, JavaScript, TypeScript, Python, C++, Tailwind CSS, Markdoc, Node.js, React, Amazon Web Services, MERN Stack, Social Media Management, Graphic Design, Content Creation, Grant Writing",
+  "jhu": {
+    "major": "Film & Media Studies, Computer Science (B.S)",
+    "start": "Aug 2020",
+    "end": "May 2024",
+    "film_courses": "Intro - Advanced Video Production, Intro - Advanced Film Production, Film Sound, Intermediality, Intro Screenwriting",
+    "cs_courses": "Data Structures, Computer System Fundamentals, Full-Stack JavaScript, User Interfaces & Mobile Applications, Object Oriented Software Engineering, Web Security",
+    "extracurriculars": "",
+    "details": "Recipient of the Hudson Trust Scholarship, a merit award given to less than 20 students per year. Achieved Dean's List for all semesters to date."
+  },
+  "film_projects": [
+    {
+      "id": "waiting_room",
+      "title": "The Waiting Room",
+      "director": "Mia DeAngelo",
+      "year": "unreleased",
+      "role": "Line Producer",
+      "student": true,
+      "own_page": false
+    },
+    {
+      "id": "late",
+      "title": "LATE",
+      "director": "Devin Andrada",
+      "year": "unreleased",
+      "role": "Producer, Gaffer",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "iwetf",
+      "title": "I Will Enjoy This Food",
+      "director": "Ellie Rha",
+      "year": "2022",
+      "role": "Producer, Exec. Prod., 2nd Asst. Director",
+      "student": true,
+      "own_page": true,
+      "details": "Lead successful crowdfunding effort; raised $6,176 of $5,000 goal. Ran promotional TikTok profile with over 12k subscribers, 300k likes. Responsible for data wrangling, transportation, catering, and schedule management on set; resulted in earlier-than-anticipated wrap time. Managed budget including payment of cast and crew; wrapped under budget."
+    },
+    {
+      "id": "sundown",
+      "title": "Sundown",
+      "director": "Cierra Gladden",
+      "year": "2023",
+      "role": "Producer",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "muoo",
+      "title": "Moving Up, Out, On",
+      "director": "Christian Reidy",
+      "year": "2023",
+      "role": "Grip",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "sierra",
+      "title": "Sierra's Grand Plan to Become An Adult",
+      "director": "Lorraine Rinaldi",
+      "year": "2023",
+      "role": "Assistant Director",
+      "student": true,
+      "own_page": false
+    },
+    {
+      "id": "lollipops",
+      "title": "Lollipops",
+      "director": "Evelyn Tang",
+      "year": "2023",
+      "role": "Producer, Gaffer",
+      "student": true,
+      "own_page": false
+    },
+    {
+      "id": "liminality",
+      "title": "Liminality",
+      "director": "Krystal Yearis",
+      "year": "2023",
+      "role": "Executive Producer",
+      "student": true,
+      "own_page": false
+    },
+    {
+      "id": "froggies",
+      "title": "Froggies",
+      "director": "Isabel Salas and Sophia Lin",
+      "year": "ant. 2024",
+      "role": "Producer",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "red_prior",
+      "title": "Red Prior",
+      "director": "Sophia Lin",
+      "year": "ant. 2024",
+      "role": "Producer, 2nd Unit Gaffer",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "ctl",
+      "title": "Cocaine to London",
+      "director": "Devin Andrada",
+      "year": "ant. 2024",
+      "role": "Gaffer",
+      "student": true,
+      "own_page": true
+    },
+    {
+      "id": "irl",
+      "title": "IRL",
+      "director": "Ling Yu Yan and Ellie Rha",
+      "year": "unreleased",
+      "role": "Producer",
+      "student": false,
+      "own_page": false
+    },
+    {
+      "id": "bkas",
+      "title": "Being Korean-American Sucks",
+      "director": "Ellie Rha",
+      "year": "ant. 2024",
+      "role": "Producer, Asst. Director",
+      "student": false,
+      "own_page": true,
+      "details": "Establish and manage partnerships with notable fashion, beauty, and dining brands including Marc Jacobs, Urban Decay, and Fuku. Manage all stages of production for six photoshoots in New York City, Baltimore, and South Korea with a $40,000 budget. Hire and communicate with a 25+ person crew based in New York City and Baltimore."
+    },
+    {
+      "id": "manger",
+      "title": "Manger",
+      "director": "Jimmy Joe Roche",
+      "year": "ant. 2024",
+      "role": "Production Assistant",
+      "student": false,
+      "own_page": true
+    },
+    {
+      "id": "quaker",
+      "title": "Quake(r)",
+      "director": "Giovanna Molina",
+      "year": "ant. 2024",
+      "role": "2nd Assistant Camera",
+      "student": false,
+      "own_page": false
+    }
+  ],
+  "cs_projects": [
+    {
+      "id": "ocb",
+      "title": "Open CourseBook",
+      "role": "Full-Stack Developer",
+      "year": "2022-2023",
+      "details": "Used NextJS and Markdoc to build an open-source platform for textbook development with support for custom plugins. Oversaw development of the overall user interface, including mobile responsiveness and search functionality."
+    },
+    {
+      "id": "bookit",
+      "title": "DMC Bookit",
+      "role": "Frontend Developer",
+      "year": "2023-2024"
+    },
+    {
+      "id": "hopout",
+      "title": "HopOut",
+      "role": "Full-Stack Developer",
+      "year": "2023"
+    },
+    {
+      "id": "speakerschedule",
+      "title": "SpeakerSchedule",
+      "role": "Full-Stack Developer",
+      "year": "2023"
+    }
+  ]
+}
