@@ -65,7 +65,7 @@ class DevTerminal extends Component {
       <Terminal
         ref={this.terminal}
         commands={this.commands}
-        welcomeMessage={"Welcome! Enter help to learn more or exit to return to the list."}
+        welcomeMessage={"Welcome! Enter help to learn more or exit to return to the home page."}
         promptLabel={"guest:~$"}
         promptLabelStyle={{ color: '#f87171' }}
         inputTextStyle={{ color: '#ffffff', outline: 'none', boxShadow: 'none', height: 'auto' }}
