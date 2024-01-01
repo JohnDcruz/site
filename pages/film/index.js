@@ -24,7 +24,7 @@ function Film() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 m-5 justify-center items-center">
           {projects.map((film) => (
             <div className="cursor-pointer grayscale-0 md:grayscale md:hover:grayscale-0" key={film.id} onClick={() => router.push('/film/' + film.id)}>
-              <Image src={'/film_images/' + film.id + '/thumb.png'} alt={film.title} height={1000} width={1000} className="rounded-lg" />
+              <Image src={'/film_images/' + film.id + '/thumb.jpg'} alt={film.title} height={1000} width={1000} className="rounded-lg" />
             </div>
           ))}
         </div>

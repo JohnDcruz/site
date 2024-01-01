@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Header from "../components/header"
 import { Accordion } from "flowbite-react";
-import profile from '../public/profile.webp'
+import profile from '../public/profile.jpg'
 import data from '../data.json'
 import Link from 'next/link';
 
