@@ -1,6 +1,6 @@
 import Header from "../../components/header";
 import data from '../../data.json';
-import Router from "next/router";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Film() {
   const projects = data.film_projects.filter((project) => project.own_page === true);
-  const router = Router;
+  const router = useRouter();
 
   return (
     <div className='min-h-screen bg-center bg-cover bg-no-repeat bg-film-grain'>

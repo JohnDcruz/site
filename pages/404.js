@@ -1,10 +1,15 @@
 import Header from "../components/header"
-import Router from "next/router"
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function PageNotFound() {
-  setTimeout(() => {
-    Router.push("/")
-  }, 2000)
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push('/');
+    }, 2000);
+  });
 
   return (
     <div>
