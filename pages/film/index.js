@@ -13,13 +13,6 @@ function Film() {
   return (
     <div className='min-h-screen bg-center bg-cover bg-no-repeat bg-film-grain'>
       <Header title={"Film Work"} />
-      <div className="items-left text-left justify-left text-white absolute top-0 left-0">
-        <Link href='/' id='homeButton'>
-          <button id='backButton' className='text-xl m-7 rounded-full border-0 font-semibold hover:text-slate-400'>
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </button>
-        </Link>
-      </div>
       <main className='mx-auto p-10 flex flex-col items-center text-white justify-center h-full'>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 m-5 justify-center items-center">
           {projects.map((film) => (
