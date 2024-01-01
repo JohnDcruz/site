@@ -49,13 +49,6 @@ export default function Home() {
             </Link>
           </Tooltip>
         </div>
-        {/* <div className='absolute bottom-0 left-0 m-5'>
-          <Tooltip content='Click on anything to learn more!' placement="right" className='w-max'>
-            <button id='infoButton' className='text-xl font-semibold text-slate-100'>
-              <FontAwesomeIcon icon={faCircleExclamation} />
-            </button>
-          </Tooltip>
-        </div> */}
       </main>
     </div>
   )
