@@ -1,10 +1,20 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import Header from '../../components/header';
+import data from '../../data.json';
 
 export default function DevPage() {
   const router = useRouter()
   const { id } = router.query
+  const project = data.cs_projects.find((project) => project.id === id);
 
   return (
-    <p>CS: {id}</p>
+    <div className='bg-slate-800 min-h-screen'>
+      <Header title={project ? project.title : 'CS Project'} />
+      <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center h-full'>
+        <div className="m-5">
+          
+        </div>
+      </main>
+    </div>
   )
 }

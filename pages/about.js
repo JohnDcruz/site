@@ -59,10 +59,10 @@ function About() {
                   <Accordion.Content className='space-y-4'>
                     <div className='space-y-1'>
                       <p className='font-bold'>Non-Student Films</p>
-                      {professional_film_projects.map((film) => ( film.own_page ? 
-                        (<Link key={film.id} href={`/film/${film.id}`}>
-                          <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        </Link>) :
+                      {professional_film_projects.map((film) => ( //film.own_page ? 
+                        // (<Link key={film.id} href={`/film/${film.id}`}>
+                        //   <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
+                        // </Link>) :
                         (<div key={film.id}>
                           <p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
                         </div>)
@@ -70,10 +70,10 @@ function About() {
                     </div>
                     <div className='space-y-2'>
                       <p className='font-bold'>Student Films</p>
-                      {student_film_projects.map((film) => ( film.own_page ?
-                        (<Link key={film.id} href={`/film/${film.id}`}>
-                          <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        </Link>) :
+                      {student_film_projects.map((film) => ( //film.own_page ?
+                        // (<Link key={film.id} href={`/film/${film.id}`}>
+                        //   <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
+                        // </Link>) :
                         (<div key={film.id}>
                           <p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
                         </div>)
@@ -87,9 +87,12 @@ function About() {
                   </Accordion.Title>
                   <Accordion.Content className='space-y-2'>
                     {cs_projects.map((project) => (
-                      <Link key={project.id} href={`/dev/${project.id}`}>
-                        <p className='font-bold hover:underline cursor-pointer'>{project.title} - {project.role}</p>
-                      </Link>
+                      // <Link key={project.id} href={`/dev/${project.id}`}>
+                        // <p className='font-bold hover:underline cursor-pointer'>{project.title} - {project.role}</p>
+                      // </Link>
+                      <div key={project.id}>
+                        <p className='font-bold'>{project.title} - {project.role}</p>
+                      </div>
                     ))}
                   </Accordion.Content>
               </Accordion.Panel>

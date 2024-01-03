@@ -1,9 +1,6 @@
 import Header from "../../components/header";
 import data from '../../data.json';
 import { useRouter } from "next/router";
-import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
 
 function Film() {
