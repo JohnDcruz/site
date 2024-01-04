@@ -20,7 +20,7 @@ export default function FilmPage() {
               <Carousel slide={false} className='mb-10'>
                 {film.images.map((image, index) => (
                   <div key={index} className='flex justify-center items-center relative' style={{height: '500px'}}>
-                    <Image src={'/film_images/' + film.id + '/' + image} alt={film.title} fill={true} objectFit='cover' />
+                    <Image src={'/film_images/' + film.id + '/' + image} alt={film.title} fill={true} className='object-cover' />
                   </div>
                 ))}
               </Carousel>

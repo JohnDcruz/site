@@ -4,6 +4,8 @@ import { Accordion } from "flowbite-react";
 import profile from '../public/profile.jpg'
 import data from '../data.json'
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   const about = data.about;
@@ -20,7 +22,7 @@ function About() {
         <div className="m-5">
           <div className='flex'>
             <div style={{minHeight: '400px', minWidth: '400px'}} className='w-3/12 relative hidden md:block'>
-              <Image src={profile} alt="Profile" layout="fill" objectFit="cover" />
+              <Image src={profile} alt="Profile" fill={true} className='object-cover' />
             </div>
             <div className='md:w-9/12 w-full md:ml-10 space-y-3 flex flex-col items-center text-center justify-center'>
               <h1 className='text-6xl'>
@@ -75,6 +77,7 @@ function About() {
                           (<p >{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>)
                         } </div> ))}
                     </div>
+                    <Link href={'/film'}><p className='font-bold text-md mt-5 cursor-pointer hover:underline'>Visit the Film page for more <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-md' /></p></Link>
                   </Accordion.Content>
               </Accordion.Panel>
               <Accordion.Panel>
@@ -83,10 +86,9 @@ function About() {
                   </Accordion.Title>
                   <Accordion.Content className='space-y-2'>
                     {cs_projects.map((project) => (
-                      <Link key={project.id} href={`/dev/${project.id}`}>
-                        <p className='font-bold hover:underline cursor-pointer'>{project.title} - {project.role}</p>
-                      </Link>
+                      <p key={project.id} className='font-bold'>{project.title} - {project.role}</p>
                     ))}
+                    <Link href={'/terminal'}><p className='font-bold text-md mt-5 cursor-pointer hover:underline'>Visit the <span className=' font-mono'>Terminal</span> for more <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='text-md' /></p></Link>
                   </Accordion.Content>
               </Accordion.Panel>
               <Accordion.Panel>

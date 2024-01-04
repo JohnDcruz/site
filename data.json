@@ -263,7 +263,8 @@
       "title": "Open CourseBook",
       "role": "Full-Stack Developer",
       "year": "2022-2023",
-      "details": "Used NextJS and Markdoc to build an open-source platform for textbook development with support for custom plugins. Oversaw development of the overall user interface, including mobile responsiveness and search functionality."
+      "details": "The Open Coursebook (OCB) project provides a collection of tools and services to write, publish, discover, and read next generation digital textbooks.",
+      "work": ["building the 'start' and 'search' commands for the OCB command line interface","implementing and styling the textbook search feature (with Lunr)","creating a dynamic video player and image plugin","styling the textbook content (with Typography.JS and TailwindCSS)"]
     },
     {
       "id": "bookit",

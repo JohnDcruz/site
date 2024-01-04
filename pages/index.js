@@ -18,7 +18,7 @@ export default function Home() {
         </p>
         <p className='text-2xl font-serif tracking-wide mb-5'>
           <span className='hover:text-blue-400'><Link href='/film'>filmmaker.</Link>&nbsp;</span>
-          <span className='hover:text-green-400'><Link href='/dev'>developer.</Link>&nbsp;</span>
+          <span className='hover:text-green-400'><Link href='/terminal'>developer.</Link>&nbsp;</span>
           <span className='hover:text-yellow-400'><Link href='/about'>student.</Link></span>
         </p>
         <div className="flex gap-2 mb-5">
