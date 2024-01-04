@@ -59,25 +59,21 @@ function About() {
                   <Accordion.Content className='space-y-4'>
                     <div className='space-y-1'>
                       <p className='font-bold'>Non-Student Films</p>
-                      {professional_film_projects.map((film) => ( //film.own_page ? 
-                        // (<Link key={film.id} href={`/film/${film.id}`}>
-                        //   <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        // </Link>) :
-                        (<div key={film.id}>
-                          <p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        </div>)
-                      ))}
+                      {professional_film_projects.map((film) => ( <div key={film.id}> {film.own_page ? 
+                        (<Link href={`/film/${film.id}`}>
+                          <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
+                        </Link>) :
+                        (<p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>)
+                      } </div> ))}
                     </div>
-                    <div className='space-y-2'>
+                    <div className='space-y-1'>
                       <p className='font-bold'>Student Films</p>
-                      {student_film_projects.map((film) => ( //film.own_page ?
-                        // (<Link key={film.id} href={`/film/${film.id}`}>
-                        //   <p className='hover:underline cursor-pointer'>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        // </Link>) :
-                        (<div key={film.id}>
-                          <p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
-                        </div>)
-                      ))}
+                        {student_film_projects.map((film) => ( <div key={film.id}> {film.own_page ?
+                          (<Link href={`/film/${film.id}`} className='hover:underline cursor-pointer'>
+                            <p>{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>
+                          </Link>) :
+                          (<p >{film.title} (dir. {film.director}, {film.year}) - {film.role}</p>)
+                        } </div> ))}
                     </div>
                   </Accordion.Content>
               </Accordion.Panel>
@@ -87,12 +83,9 @@ function About() {
                   </Accordion.Title>
                   <Accordion.Content className='space-y-2'>
                     {cs_projects.map((project) => (
-                      // <Link key={project.id} href={`/dev/${project.id}`}>
-                        // <p className='font-bold hover:underline cursor-pointer'>{project.title} - {project.role}</p>
-                      // </Link>
-                      <div key={project.id}>
-                        <p className='font-bold'>{project.title} - {project.role}</p>
-                      </div>
+                      <Link key={project.id} href={`/dev/${project.id}`}>
+                        <p className='font-bold hover:underline cursor-pointer'>{project.title} - {project.role}</p>
+                      </Link>
                     ))}
                   </Accordion.Content>
               </Accordion.Panel>
@@ -117,7 +110,7 @@ function About() {
                       <p>Witness Theater - Assistant Technical Director, Light Board Operator</p>
                       <p>Color of My Voice - Social Media Manager</p>
                     </div>
-                    <div key="JHU">
+                    <div key="Regis">
                       <p className='font-bold text-2xl'>Regis High School</p>
                       <p>Aug 2016 - May 2020</p>
                       <p className="mt-2">Tuition-free scholarship recipient. National Merit Commended Student.</p>

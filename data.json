@@ -108,7 +108,7 @@
       "year": "unreleased",
       "role": "Producer, Gaffer",
       "student": true,
-      "own_page": true
+      "own_page": false
     },
     {
       "id": "iwetf",
@@ -118,7 +118,11 @@
       "role": "Producer, Exec. Prod., 2nd Asst. Director",
       "student": true,
       "own_page": true,
-      "details": "Lead successful crowdfunding effort; raised $6,176 of $5,000 goal. Ran promotional TikTok profile with over 12k subscribers, 300k likes. Responsible for data wrangling, transportation, catering, and schedule management on set; resulted in earlier-than-anticipated wrap time. Managed budget including payment of cast and crew; wrapped under budget."
+      "status": "Released",
+      "logline": "A film about food as a love language.",
+      "details": ["“잘 먹겠습니다! (I Will Enjoy This Food!)” is a short film about everything you're not supposed to talk about, much less consider, as a Korean-American woman.","Minji is a queer Korean-American woman, and Helme is her Korean American grandmother. Together, the two make dinner, communicating in the love language they have always shared and know best: cooking and eating. Over the course of Minji's favorite meal, we learn about bridging the gap between two generations through Minji's intersecting identities: feminism, sexuality, repression, religion, and wonderful food."],
+      "responsibilities": ["Lead successful crowdfunding campaign on Seed&Spark. Exceeded $5,000 goal resulting in budget increase and stipends to creative team.","Ran the director's TikTok profile with over 19K followers and 1.4M likes, and a promotional Instagram profile with 1k followers.","Managed all stages of production, including budgeting, data wrangling, equipment reservations, hiring crew, catering, and transportation."],
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "id": "sundown",
@@ -127,16 +131,26 @@
       "year": "2023",
       "role": "Producer",
       "student": true,
-      "own_page": true
+      "own_page": true,
+      "status": "Released",
+      "logline": "After ignoring his mother's warning of not staying out past sunset, Mikey returns home to a Creature that haunts him through his adolescence.",
+      "details": ["Sundown is a coming-of-age thriller short about Mikey, a young boy from Baltimore, and the lifelong consequences of disobeying his mother and staying out too late one night.","As a child, Mikey has his whole life ahead of him. As an adult, Mikey lives in fear after his encounter with the Creature in his childhood. His mother has since passed, leaving him without an immediate family. Mikey lives alone in Baltimore City and clearly struggles with his mental health. Mikey eventually reaches out for help and finds another opportunity to encounter the Creature. Mikey must make a choice to take back his life… will he make the right one?"],
+      "responsibilities": ["Managed preproduction logistics including budgeting, catering, transportation, and scheduling.","Helped cast Baltimore-based talent.","Oversaw crowdfunding efforts on Seed&Spark."],
+      "images": ["0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"]
     },
     {
       "id": "muoo",
       "title": "Moving Up, Out, On",
       "director": "Christian Reidy",
       "year": "2023",
-      "role": "Grip",
+      "role": "Grip & Social Media Manager",
       "student": true,
-      "own_page": true
+      "own_page": true,
+      "status": "Released",
+      "logline": "While trying to overcome the death of her mother, her conflicting relationship with her grieving father, and a medicinal treatment that blends imagination and reality, Sam becomes torn between taking control of her life or falling victim to overwhelming sadness.",
+      "details": ["This story will explore themes of grief and family through Sam's eyes while placing a specific focus on the consequences of failing to process a traumatic experience. Sam wants to go away to college, to get away from the void that her mother's death has left in her life at home. However, Sam's father struggles to work through his emotions, and turns to a treatment that allows him to ignore the loss of his wife.","As Sam's relationship with her father grows confusing and chaotic, it will begin to test its limits, resulting in a confrontation that forces Sam to decide how much more of her father's emotional turmoil she can handle."],
+      "responsibilities": ["Assist the gaffer with lighting as a grip.","Design all social media posts and fundraising images.","Manage Instagram and TikTok profiles."],
+      "images": ["0.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "id": "sierra",
@@ -172,7 +186,7 @@
       "year": "ant. 2024",
       "role": "Producer",
       "student": true,
-      "own_page": true
+      "own_page": false
     },
     {
       "id": "red_prior",
@@ -181,7 +195,12 @@
       "year": "ant. 2024",
       "role": "Producer, 2nd Unit Gaffer",
       "student": true,
-      "own_page": true
+      "own_page": true,
+      "status": "Post-Production",
+      "logline": "A pregnant mother in prison begins to make sense of her guilt after connecting with a kindred inmate, leading her to make a transformative discovery.",
+      "details": ["Ling lives solitary days repairing jumpsuits in prison. Pregnant with her second child, she is plagued by memories of her firstborn daughter, whom she gave up amid her poverty-stricken living conditions.","Every night, she dutifully works on a textile design of her daughter's likeness, in a bid to remember her — but Ling may be doing more than she lets on.","She begins to connect with another inmate, Ruth, opening herself up more than ever before. When this leads to an unexpected breakthrough, Ling must rethink everything she thought she knew."],
+      "responsibilities":["Worked with director and producing team to actualize a challenging script, involving a prison set and a pregnant lead, with a minimal student budget.","Coordinated work with child talent.", "Managed scheduling and craft services for a 10 day shoot with 20+ company members and multiple location moves.","Provided gaffing and grip services for a pickup shoot."],
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"]
     },
     {
       "id": "ctl",
@@ -190,7 +209,7 @@
       "year": "ant. 2024",
       "role": "Gaffer",
       "student": true,
-      "own_page": true
+      "own_page": false
     },
     {
       "id": "irl",
@@ -209,7 +228,10 @@
       "role": "Producer, Asst. Director",
       "student": false,
       "own_page": true,
-      "details": "Establish and manage partnerships with notable fashion, beauty, and dining brands including Marc Jacobs, Urban Decay, and Fuku. Manage all stages of production for six photoshoots in New York City, Baltimore, and South Korea with a $40,000 budget. Hire and communicate with a 25+ person crew based in New York City and Baltimore."
+      "status": "Post-Production",
+      "details": ["Being Korean-American Sucks is a photobook memoir and 16mm anthology film series by Ellie Rha.","Funded by the Johns Hopkins University Meg Walsh Leadership Award Fellowship"],
+      "responsibilities": ["Establish and manage partnerships with notable fashion, beauty, and dining brands including Marc Jacobs, Urban Decay, and Fuku.","Manage all stages of production for six photoshoots in New York City, Baltimore, and South Korea with a $40,000 budget","Hire and communicate with a 25+ person crew based in New York City and Baltimore."],
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "id": "manger",
@@ -218,7 +240,12 @@
       "year": "ant. 2024",
       "role": "Production Assistant",
       "student": false,
-      "own_page": true
+      "own_page": true,
+      "status": "Post-Production",
+      "logline": "A feral prophet of gutter wisdom takes the viewer on a walking tour outside an abandoned strip mall while offering a frenetic retelling of the Book of Genesis.",
+      "details": ["Funding provided by the Saul Zaentz Innovation Fund","Proof-of-concept for an upcoming feature film"],
+      "responsibilities": ["Transported actors and equipment from holding location to set.","Assisted with grip work.","Managed craft services and water on location."],
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg"]
     },
     {
       "id": "quaker",
