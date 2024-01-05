@@ -270,19 +270,17 @@
       "id": "bookit",
       "title": "DMC Bookit",
       "role": "Frontend Developer",
-      "year": "2023-2024"
+      "year": "2023-2024",
+      "details": "The JHU DMC's Bookit replaces LibCal's frontend with a custom React site, simplifying the process of patron booking and equipment reservation.",
+      "work": ["building a frontend that allows patrons to view and reserve available items as well as browse the DMC's catalog","linking the frontend to the LibCal's API", "integrating the site with JHU's SSO and user management system"]
     },
     {
       "id": "hopout",
       "title": "HopOut",
       "role": "Full-Stack Developer",
-      "year": "2023"
-    },
-    {
-      "id": "speakerschedule",
-      "title": "SpeakerSchedule",
-      "role": "Full-Stack Developer",
-      "year": "2023"
+      "year": "2023",
+      "details": "HopOut was developed for JHU's Object Oriented Software Engineering program. It provides a platform for students to organize and attend events on and off campus.",
+      "work": ["building the site's frontend from scratch", "using the Google Maps API to display events", "creating a chat interface"]
     }
   ]
 }

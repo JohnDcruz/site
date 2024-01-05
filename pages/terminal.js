@@ -45,7 +45,7 @@ class DevTerminal extends Component {
                 work += '-' + item + '\n';
               });
               console.log(work)
-              return project.title + ' - ' + project.role + ' (' + project.year + ')' + '\n' + project.details + '\n' + "My work on this project included:" + '\n' + work + '\n';
+              return project.title + ' - ' + project.role + ' (' + project.year + ')' + '\n' + project.details + '\n' + "My work on this project includes:" + '\n' + work + '\n';
             }
           });
           return (returned ? result : 'Project not found.');
