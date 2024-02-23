@@ -2,6 +2,7 @@ import Terminal from 'react-console-emulator';
 import React, { Component } from 'react';
 import data from '../data.json';
 import Header from '../components/header';
+import Router from 'next/router';
 
 class DevTerminal extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class DevTerminal extends Component {
     this.projects = props.projects;
     this.experience = props.experience;
     this.terminal = React.createRef();
+    this.router = Router;
   }
 
   commands = {
