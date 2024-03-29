@@ -89,17 +89,7 @@
       "tags": ["film"]
     }
   ],
-  "accolades": "JHU Hodson Scholar, National Merit Commended Student, JHU Center for Talented Youth, AFA CyberPatriot Semifinalist",
   "skills": "CompTIA A+ Certified, Adobe Creative Cloud, NextJS, JavaScript, TypeScript, Python, C++, Tailwind CSS, Markdoc, Node.js, React, Amazon Web Services, MERN Stack, Social Media Management, Graphic Design, Content Creation, Grant Writing",
-  "jhu": {
-    "major": "Film & Media Studies, Computer Science (B.S)",
-    "start": "Aug 2020",
-    "end": "May 2024",
-    "film_courses": "Intro - Advanced Video Production, Intro - Advanced Film Production, Film Sound, Intermediality, Intro Screenwriting",
-    "cs_courses": "Data Structures, Computer System Fundamentals, Full-Stack JavaScript, User Interfaces & Mobile Applications, Object Oriented Software Engineering, Web Security",
-    "extracurriculars": "",
-    "details": "Recipient of the Hudson Trust Scholarship, a merit award given to less than 20 students per year. Achieved Dean's List for all semesters to date."
-  },
   "film_projects": [
     {
       "id": "mopus",

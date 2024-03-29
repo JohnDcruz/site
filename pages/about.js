@@ -99,7 +99,7 @@ function About() {
                     <div key="JHU">
                       <p className='font-bold text-2xl'>Johns Hopkins University</p>
                       <p>Film & Media Studies, Computer Science (B.S) | Aug 2020 - May 2024</p>
-                      <p className="mt-2">Recipient of the Hudson Trust Scholarship, a merit award given to less than 20 students per year.</p>
+                      <p className="mt-2">Recipient of the Hodson Trust Scholarship, a merit award given to less than 20 students per year.</p>
                       <p>Achieved Dean&apos;s List for all semesters to date.</p>
                       <p className='font-bold mt-2'>Selected Film Coursework</p>
                       <p>Intro - Advanced Video Production, Intro - Advanced Film Production, Film Sound, Intermediality, Intro Screenwriting</p>
