@@ -1,6 +1,6 @@
 {
   "about": {
-    "description":"is a senior studying Film & Media Studies and Computer Science at the Johns Hopkins University. He has diverse experience in film production, including roles as a producer, assistant director, and gaffer. In his capacity as producer, he has managed various publicity and social media teams and overseen partnerships with major fashion and beauty brands. By the time he graduates college, he will have worked on over 20 projects ranging from student films to professional productions.",
+    "description":"is a senior studying Film & Media Studies and Computer Science at the Johns Hopkins University. He has diverse experience in film production, including roles as a producer, assistant director, and gaffer. In his capacity as producer, he has managed various publicity and social media teams and overseen partnerships with major fashion and beauty brands. By the time he graduates college, he will have worked on over 15 projects ranging from student films to professional productions.",
     "red": "finishing his last semester at Johns Hopkins",
     "blue": "watching Good Omens",
     "green": "listening to Prelude to Ecstacy by The Last Dinner Party",
@@ -101,6 +101,15 @@
     "details": "Recipient of the Hudson Trust Scholarship, a merit award given to less than 20 students per year. Achieved Dean's List for all semesters to date."
   },
   "film_projects": [
+    {
+      "id": "mopus",
+      "title": "Magnum Opus",
+      "director": "Sophia Pasalis",
+      "year": "unreleased",
+      "role": "Production Designer",
+      "student": true,
+      "own_page": false
+    },
     {
       "id": "waiting_room",
       "title": "The Waiting Room",
