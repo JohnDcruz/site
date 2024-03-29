@@ -264,6 +264,15 @@
       "role": "2nd Assistant Camera",
       "student": false,
       "own_page": false
+    },
+    {
+      "id": "prom",
+      "title": "How to: Prom",
+      "director": "Indi Aufranc",
+      "year": "ant. 2024",
+      "role": "Gaffer",
+      "student": true,
+      "own_page": false
     }
   ],
   "cs_projects": [
