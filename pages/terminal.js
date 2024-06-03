@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import data from '../data.json';
 import Header from '../components/header';
 import Router from 'next/router';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 class DevTerminal extends Component {
   constructor(props) {
@@ -89,6 +90,8 @@ function Dev() {
   return (
     <div className='bg-black min-h-screen'>
       <Header title={"Terminal"} />
+      <GoogleAnalytics gaId='G-GHQ9WRFG4H' />
+
       <main className='mx-auto flex flex-col bg-black items-center text-white justify-center h-full'>
         <div className="w-full">
           <Terminal projects={projects} experience={experience} />

@@ -1,14 +1,15 @@
 import Header from "../components/header"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faEnvelope, faClapperboard } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faClapperboard } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faImdb } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import { Tooltip } from "flowbite-react";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function Home() {
   return (
     <div>
       <Header title={'Home'}/>
+      <GoogleAnalytics gaId='G-GHQ9WRFG4H' />
 
       <main className='mx-auto h-screen flex flex-col bg-slate-800 items-center text-center text-white justify-center relative space-y-5'>
         <p className='font-serif tracking-wide text-7xl text-center mb-2 hover:text-red-400'>

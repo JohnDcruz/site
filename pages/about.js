@@ -6,6 +6,7 @@ import data from '../data.json'
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 function About() {
   const about = data.about;
@@ -18,6 +19,8 @@ function About() {
   return (
     <div className='bg-slate-800 min-h-screen'>
       <Header title={"About"} />
+      <GoogleAnalytics gaId='G-GHQ9WRFG4H' />
+      
       <main className='mx-auto flex flex-col bg-slate-800 items-center text-white justify-center h-full'>
         <div className="m-5">
           <div className='flex'>

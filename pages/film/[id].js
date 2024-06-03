@@ -4,6 +4,7 @@ import data from '../../data.json'
 import { Carousel, Modal } from 'flowbite-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export default function FilmPage() {
   const router = useRouter()
@@ -13,6 +14,8 @@ export default function FilmPage() {
   return (
     <div className='bg-slate-800 min-h-screen'>
       <Header title={film ? film.title : 'Film Project'} />
+      <GoogleAnalytics gaId='G-GHQ9WRFG4H' />
+      
       <main className='mx-auto flex bg-slate-800 items-center text-white justify-center h-full'>
         {film ? (
           <div className='w-full'>
