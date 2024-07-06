@@ -1,28 +1,37 @@
 {
   "about": {
-    "description":"is a recent graduate from the Film & Media Studies and Computer Science programs at the Johns Hopkins University. He has diverse experience in film production, including roles as a producer, assistant director, and gaffer. In his capacity as producer, he has managed various publicity and social media teams and overseen partnerships with major fashion and beauty brands. He has also worked on over 15 projects ranging from student films to professional productions.",
-    "red": "preparing to move to Los Angeles",
+    "description":"is a recent graduate from the Film & Media Studies and Computer Science programs at the Johns Hopkins University. For the last three years, he has immersed himself in the world of film & television development, absorbing the DNA of the entertainment industry by analyzing what made a successful and captivating watch. His internship experiences at leading production companies have helped him hone his skills in script coverage, talent and IP research, and delivering feedback to writers and directors.",
+    "red": "interning at Madison Wells Media",
     "blue": "watching The Sopranos",
     "green": "listening to The Rise and Fall of a Midwest Princess by Chappell Roan",
-    "yellow": "finishing up his first short film"
+    "yellow": "writing his first feature film"
   },
   "work": [
+    {
+      "role": "Studio Intern",
+      "company": "Madison Wells Media",
+      "start": "Jun 2024",
+      "end": "present",
+      "location": "Los Angeles, CA",
+      "details": "Process 15-20 script and novel submissions per week from high-profile partners and agencies. Meet weekly with department heads to pitch new material and discuss their marketability. Write content for industry executives, including coverage, script feedback, draft comparisons, talent lists, and meeting notes.",
+      "tags": ["film"]
+    },
     {
       "role": "Intern",
       "company": "Belletrist Productions",
       "start": "Jan 2024",
-      "end": "present",
+      "end": "May 2024",
       "location": "Remote",
-      "details": "Assist with projects from early development through production, including Hulu's Tell Me Lies. Responsibilities include coverage, IP identification and acquisition, packaging, pitching, and talent selection. Participate in tutorials covering assistant duties, including rolling calls and calendar management.",
+      "details": "Assisted with projects from early development through production, including Hulu's Tell Me Lies. Responsibilities included coverage, IP identification and acquisition, packaging, pitching, and talent selection. Participated in tutorials covering assistant duties, including rolling calls and calendar management.",
       "tags": ["film"]
     },
     {
       "role": "Student Staff",
       "company": "JHU Digital Media Center",
       "start": "Aug 2023",
-      "end": "present",
+      "end": "May 2024",
       "location": "Baltimore, MD",
-      "details": "Manage high volume of client requests for bookings, support, and trainings. Assist patrons with work in a variety of mediums, including filmmaking, photography, audio recording and mixing, live events, 3D printing, hardware development, and design. Train patrons on equipment and in-house resources, including Aputure lights, Canon DSLR/mirrorless cameras, Zoom recorders, Canon/Epson/HP inkjet printers, and Prusa 3D printers. Design proprietary patron booking system as a replacement for LibCal.",
+      "details": "Managed high volume of client requests for bookings, support, and trainings. Assisted patrons with work in a variety of mediums, including filmmaking, photography, audio recording and mixing, live events, 3D printing, hardware development, and design. Trained patrons on equipment and in-house resources, including Aputure lights, Canon DSLR/mirrorless cameras, Zoom recorders, Canon/Epson/HP inkjet printers, and Prusa 3D printers. Designed proprietary patron booking system as a replacement for LibCal.",
       "tags": ["film", "cs"]
     },
     {
@@ -38,7 +47,7 @@
       "role": "Course Assistant",
       "company": "JHU Computer Science Department",
       "start": "Sep 2022",
-      "end": "present",
+      "end": "May 2024",
       "location": "Baltimore, MD",
       "details": "Gateway Python (Head CA): Built autograder for 4 Gradescope assignments in Python. Assisted instructors in developing a new slate of projects fostering practical applications of course content. Managed project assistance and grading assignments for 20 course assistants. Provided support to instructors for quizzes, grading, and overall student learning. User Interfaces & Mobile Applications: guided three teams through the Android development process to craft polished gaming and productivity products.",
       "tags": ["cs"]
