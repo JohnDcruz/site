@@ -203,7 +203,9 @@
       "year": "2024",
       "role": "Producer",
       "student": true,
-      "own_page": false
+      "own_page": true,
+      "status": "Released",
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "id": "red_prior",
@@ -213,7 +215,7 @@
       "role": "Producer, 2nd Unit Gaffer",
       "student": true,
       "own_page": true,
-      "status": "Post-Production",
+      "status": "Released",
       "logline": "A pregnant mother in prison begins to make sense of her guilt after connecting with a kindred inmate, leading her to make a transformative discovery.",
       "details": ["Ling lives solitary days repairing jumpsuits in prison. Pregnant with her second child, she is plagued by memories of her firstborn daughter, whom she gave up amid her poverty-stricken living conditions.","Every night, she dutifully works on a textile design of her daughter's likeness, in a bid to remember her — but Ling may be doing more than she lets on.","She begins to connect with another inmate, Ruth, opening herself up more than ever before. When this leads to an unexpected breakthrough, Ling must rethink everything she thought she knew."],
       "responsibilities":["Worked with director and producing team to actualize a challenging script, involving a prison set and a pregnant lead, with a minimal student budget.","Coordinated work with child talent.", "Managed scheduling and craft services for a 10 day shoot with 20+ company members and multiple location moves.","Provided gaffing and grip services for a pickup shoot."],
@@ -226,7 +228,10 @@
       "year": "2024",
       "role": "Gaffer",
       "student": true,
-      "own_page": false
+      "own_page": true,
+      "status": "Released",
+      "logline": "As a dysfunctional family punk band completes their first album, the timid and disrespected bassist must choose between continuing to endure the band’s emotional abuse or missing out on her best chance for musical success.",
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     },
     {
       "id": "irl",
@@ -280,7 +285,9 @@
       "year": "2024",
       "role": "Gaffer",
       "student": true,
-      "own_page": false
+      "own_page": true,
+      "status": "Released",
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
     },
     {
       "id": "stormy",
@@ -289,16 +296,9 @@
       "year": "2024",
       "role": "Writer, Director, Producer",
       "student": true,
-      "own_page": false
-    },
-    {
-      "id": "gorlin",
-      "title": "Sonic Reflections",
-      "director": "Isabel Salas and John D'cruz",
-      "year": "2024",
-      "role": "Director, Editor",
-      "student": true,
-      "own_page": false
+      "own_page": true,
+      "logline": "After a triumphant return from her first touring performance, an actress returns to her local Shakespeare reading group only to find that her closest companion has turned cold. To make matters worse, she stole her umbrella! Stormy Weather follows two women embroiled in a seemingly meaningless fight as they uncover deeper conflict and emotions underneath the surface.",
+      "images": ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
     }
   ],
   "cs_projects": [
