@@ -35,14 +35,14 @@ export default function FilmPage() {
             </div>
             <hr />
             <div className='flex flex-col justify-start text-left space-y-2 m-5'>
-              {film.details ? (
+              {film.logline ? (
                 <div className='space-y-2 mb-2'>
                   <p className='font-bold text-lg'>About the Film</p>
                   <div className='space-y-2'>
                     {film.logline ? (<p>Logline: {film.logline}</p> ) : null}
-                    {film.details.map((detail) => (
+                    {film.details? film.details.map((detail) => (
                       <p key={detail}>{detail}</p>
-                    ))}
+                    )) : null}
                   </div>
                 </div>
               ) : null}
