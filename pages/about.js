@@ -12,8 +12,8 @@ function About() {
   const about = data.about;
   const work = data.work;
   const skills = data.skills;
-  const student_film_projects = data.film_projects.filter((project) => project.student);
-  const professional_film_projects = data.film_projects.filter((project) => !project.student);
+  const student_film_projects = data.film_projects.filter((project) => project.student).sort((a, b) => (a.year < b.year) ? 1 : -1);
+  const professional_film_projects = data.film_projects.filter((project) => !project.student).sort((a, b) => (a.year < b.year) ? 1 : -1);
   const cs_projects = data.cs_projects;
 
   return (
