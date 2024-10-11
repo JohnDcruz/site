@@ -16,7 +16,7 @@ function Film() {
 
       <main className='mx-auto p-10 flex flex-col items-center text-white justify-center h-full w-full'>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 m-5 justify-center items-center">
-          <div className="cursor-pointer grayscale-0 md:grayscale md:hover:grayscale-0 col-span-3" key={stormy.id} onClick={() => router.push('/film/' + stormy.id)}>
+          <div className="cursor-pointer grayscale-0 md:grayscale md:hover:grayscale-0 col-span-2 md:col-span-3" key={stormy.id} onClick={() => router.push('/film/' + stormy.id)}>
             <Image src={'/film_images/' + stormy.id + '/thumb.jpg'} alt={stormy.title} width={1920} height={500} className="rounded-lg" />
           </div>
           {projects.map((film) => (
